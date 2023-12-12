@@ -102,3 +102,46 @@ var finances = [
 
 // 5. Greatest Decrease in Losses
 // Track the largest decrease in losses between consecutive months.
+
+let totalMonths = finances.length;
+let totalProfitLosses = 0;
+let totalChange = 0;
+let greatestIncreaseAmount = 0;
+let greatestIncreaseMonth = '';
+let greatestDecreaseAmount = 0;
+let greatestDecreaseMonth = '';
+
+for (let i = 0; i < totalMonths; i++) {
+    // Add to total profit/loss
+    totalProfitLosses += finances[i][1];
+
+    // Skip the first month as there's no previous month to compare
+    if (i === 0) continue;
+
+    // Calculate the change from the previous month
+    let change = finances[i][1] - finances[i - 1][1];
+    totalChange += change;
+
+    // Check for greatest increase in profit
+    if (change > greatestIncreaseAmount) {
+        greatestIncreaseMonth = finances[i][0];
+        greatestIncreaseAmount = change;
+    }
+
+    // Check for greatest decrease in losses
+    if (change < greatestDecreaseAmount) {
+        greatestDecreaseMonth = finances[i][0];
+        greatestDecreaseAmount = change;
+    }
+}
+
+// Calculate the average change
+let averageChange = totalChange / (totalMonths - 1);
+
+console.log("%cFinancial Analysis", "color: black; font-size: 20px");
+console.log('----------------------------------------------');
+console.log(`Total Months: ${totalMonths}`);
+console.log(`Net Total Profit/Loss: ${totalProfitLosses}`);
+console.log(`Average Monthly Change: ${averageChange}`);
+console.log(`Greatest Increase in Profit: ${greatestIncreaseMonth} (${greatestIncreaseAmount})`);
+console.log(`Greatest Decrease in Loss: ${greatestDecreaseMonth} (${greatestDecreaseAmount})`);
