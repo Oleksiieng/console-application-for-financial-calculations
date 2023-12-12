@@ -86,3 +86,19 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+
+// 1. Total Number of Months
+// This is straightforward as it's the length of the finances array.
+
+// 2. Net Total Amount of Profit/Losses
+// Sum up the profit/loss values from each month.
+
+// 3. Average Change in Profit/Losses
+// Calculate the change in profit/loss from each month to the next, sum these changes, and then find the average.
+
+// 4. Greatest Increase in Profits
+// Track the largest increase in profit between consecutive months.
+
+// 5. Greatest Decrease in Losses
+// Track the largest decrease in losses between consecutive months.
