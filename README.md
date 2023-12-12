@@ -1,25 +1,21 @@
 # Unit 4 Challenge: Console Finances
 
-## Overview
+The site can be accessed at https://oleksiieng.github.io/console-application-for-financial-calculations/
 
-In this challenge, you'll be using the concepts you've learned to complete the required activity. This activity presents a real-world situation in which your newfound JavaScript skills will come in handy. You are tasked with creating code for analyzing the financial records of a company. You have been provided with a financial dataset in the `starter/index.js` file.
+The following image shows the web application's appearance and functionality:
 
-## Instructions
+![The webpage ](./images/screen1.png)
 
-1. Create a new GitHub repo called `Console-Finances`. Then, clone it to your computer.
+## Description
 
-2. Copy the starter files in your local git repository.
-
-You have been given a dataset composed of arrays with two fields, Date and Profit/Losses.
-
-Your task is to write JavaScript code that analyzes the records to calculate each of the following:
+JavaScript code that analyzes the records to calculate each of the following:
 
 * The total number of months included in the dataset.
 
 * The net total amount of Profit/Losses over the entire period.
 
 * The average of the **changes** in Profit/Losses over the entire period.
-  * You will need to track what the total change in Profit/Losses are from month to month and then find the average.
+  * Script tracks what the total change in Profit/Losses are from month to month and then find the average.
   * (`Total/(Number of months - 1)`)
 
 * The greatest increase in Profit/Losses (date and amount) over the entire period.
@@ -38,60 +34,33 @@ When you open your code in the browser your resulting analysis should look simil
   Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)
   ```
 
-Your final code should print the analysis to the console.
 
-**Hints:**
 
-* You will need to do some research on your own for this project!
+## Table of Contents
 
-* Remember, in order to combine strings and variables in the console you will need to use **concatenation**.
+- [Installation](#installation)
+- [Credits](#credits)
+- [License](#license)
 
-* How do you only print to the nearest 100th in JavaScript?
+## Installation
 
-## Grading Requirements
+To install this project:
 
-This homework is graded based on the following criteria:
+1. Clone the repository to your local machine using `git@github.com:Oleksiieng/console-application-for-financial-calculations.git`.
+2. Open the project in VS Code or any preferred IDE.
+3. Ensure you have a live server extension installed, or use a local server to view the web application.
 
-### Technical Acceptance Criteria: 40%
+## Credits
 
-* Satisfies all of the above acceptance criteria.
+Resources consulted for learning purposes:
 
-### Deployment: 32%
+- [Mozilla Developer Network (MDN)](https://developer.mozilla.org/)
+- [W3Schools](https://www.w3schools.com/)
+* [Semantic HTML](https://www.w3schools.com/html/html5_semantic_elements.asp)
+* [Image `alt` attributes](https://www.w3schools.com/tags/att_img_alt.asp)
 
-* Application deployed at live URL.
+## License
 
-* Application loads with no errors.
+This site licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-* Application GitHub URL submitted.
 
-* GitHub repository contains application code.
-
-### Repository Quality: 23%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for variable naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-### Application Quality: 5%
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository that contains your code. Give the repository a unique name and include a README file that describes the project.
-
----
-
-## Copyright
-
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
