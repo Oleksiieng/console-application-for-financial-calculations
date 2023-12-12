@@ -142,6 +142,6 @@ console.log("%cFinancial Analysis", "color: black; font-size: 20px");
 console.log('----------------------------------------------');
 console.log(`Total Months: ${totalMonths}`);
 console.log(`Net Total Profit/Loss: ${totalProfitLosses}`);
-console.log(`Average Monthly Change: ${averageChange}`);
+console.log(`Average Monthly Change: ${averageChange.toFixed(2)}`);
 console.log(`Greatest Increase in Profit: ${greatestIncreaseMonth} (${greatestIncreaseAmount})`);
 console.log(`Greatest Decrease in Loss: ${greatestDecreaseMonth} (${greatestDecreaseAmount})`);
